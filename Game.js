@@ -1,4 +1,5 @@
 const LineParser = require("./LineParser.js");
+const dnd = require("dnd-combat-simulator");
 
 module.exports = class Game {
 
