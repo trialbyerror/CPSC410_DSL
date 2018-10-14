@@ -43,7 +43,7 @@ class LineParser {
   getAndCheckNext(regexp) {
       let s = this.getNext();
       if (!regexp.test(s)) {
-          throw new Error("Unexpected token")
+          throw new Error(`Unexpected token. s is ${s}, regexp is ${regexp}`);
       }
       return s;
   }

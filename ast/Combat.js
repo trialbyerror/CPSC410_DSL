@@ -28,10 +28,22 @@ class Combat {
   }
 }
 
+class ForNode {
+  constructor() {}
+
+  parse() {
+    console.log("parsing forNode");
+    this.numTimes = LineParser.getNext();
+    LineParser.getAndCheckNext("times");
+    return;
+  }
+}
+
 class EnemyNode {
   constructor() {}
 
   parse() {
+    console.log("parsing enemy node");
     const type = LineParser.getNext();
     switch (type) {
       case "huge":
