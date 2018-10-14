@@ -11,12 +11,25 @@ module.exports = class Game {
     console.log(this.party);
   }
 
-  parse(line) {
-    console.log("Parsing line " + line);
-    switch (line) {
+  parse() {
+    if (!this.enemies) {
+      this.setupEnemies();
+      return;
+    }
+    // TODO:
+    const command = LineParser.getNext();
+    switch (command) {
       // where we make all our new nodes
       default: break;
     }
+  }
+
+  setupEnemies() {
+    LineParser.getAndCheckNext(/setup/);
+    LineParser.getAndCheckNext(/combat/);
+    this.enemies = "these are some nice enemies";
+    console.log("setting up enemies");
+    // TODO accept more cmd line args
   }
 
   // Okay so when we spin up a program, our AST is our party and whatever arguments are passed in

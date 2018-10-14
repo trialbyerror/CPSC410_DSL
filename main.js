@@ -19,7 +19,9 @@ rl.on('SIGINT', () => {
 rl.on('line', (line) => {
   LineParser.tokenize(line);
   if (game === undefined) {
-    game = new Game("main");
+    game = new Game();
+  } else {
+    game.parse();
   }
   rl.prompt();
 });
