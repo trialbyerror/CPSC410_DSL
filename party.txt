@@ -1,17 +1,17 @@
 Unite thy dwarf known as Gimli
 With his armour and shield, he is protected 4 times over
 He can withstand 24 damage from any foe
-This soul is thrice as brave as any commoner
+This soul has an initiative of 3
 With his broadsword, he aims 2 strikes at his enemy, causing pain of the fourth degree
 
 Unite thy elf known as Arwen
 She can withstand 26 damage from any foe
-This soul is twice as brave as any commoner
+This soul has an initiative of 2
 With her crossbow, she aims 1 strikes at her enemy, causing pain of the twelfth degree
 With her shortbow, she aims 2 strikes at her enemy, causing pain of the sixth degree
 
 Unite thy human known as Boromir
 With his shield, he is protected 2 times over
 He can withstand 21 damage from any foe
-This soul is just as brave as any commoner
+This soul has an initiative of 1
 With his longsword, he aims 1 strike at his enemy, causing pain of the eighth degree

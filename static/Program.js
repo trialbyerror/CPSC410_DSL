@@ -157,26 +157,15 @@ class Initiative extends Statement {
         // This soul is thrice as brave as any commoner
         this.tokenizer.getAndCheckNext(/This/);
         this.tokenizer.getAndCheckNext(/soul/);
-        this.tokenizer.getAndCheckNext(/is/);
-        switch (this.tokenizer.getNext()) {
-            case "just":
-                this.initiative = 1;
-                break;
-            case "twice":
-                this.initiative = 2;
-                break;
-            case "thrice":
-                this.initiative = 3;
-                break;
-            default:
-                this.initiative = 1;
-                break;
+        this.tokenizer.getAndCheckNext(/has/);
+        this.tokenizer.getAndCheckNext(/an/);
+        this.tokenizer.getAndCheckNext(/initiative/);
+        this.tokenizer.getAndCheckNext(/of/);
+        this.initiative = parseInt(this.tokenizer.getNext());
+        if (this.initiative === 0) {
+            this.initiative = 1;
         }
-        this.tokenizer.getAndCheckNext(/as/);
-        this.tokenizer.getAndCheckNext(/brave/);
-        this.tokenizer.getAndCheckNext(/as/);
-        this.tokenizer.getAndCheckNext(/any/);
-        this.tokenizer.getAndCheckNext(/commoner/);
+
     }
 
     evaluate() {
