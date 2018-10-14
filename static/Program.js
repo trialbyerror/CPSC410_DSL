@@ -3,18 +3,6 @@ const dnd = require('dnd-combat-simulator');
 class Node {
     constructor() {
         this.tokenizer = require("./Tokenizer.js");
-        // const csvWriter = require('csv-write-stream');
-        // this.writer = csvWriter({
-        //     headers: ["name", "alt", "alignment", "type", "size", "armour_name", "stated_ac",
-        //         "armor_bonus", "ac", "stated_hp", "hp", "expected_hp", "fudge_level", "level",
-        //         "hd", "Str", "Dex", "Con", "Int", "Wis", "Cha", "attack_parameters", "CR",
-        //         "xp", "regen", "healing_spells", "healing_dice", "healing_bonus", "sc_ability",
-        //         "log", "proficiency", "initiative_bonus", "AB_str", "AB_dex", "AB_con", "AB_int",
-        //         "AB_wis", "AB_cha"]});
-        // const fs = require("fs");
-        // this.writer.write([" "]);
-        // this.writer.pipe(fs.createWriteStream('out.csv'))
-
     }
 }
 

@@ -1,9 +1,5 @@
-const dnd = require('dnd-combat-simulator');
-
-const Program = require("./Tokens.js");
+const Program = require("./Program.js");
 let program = new Program();
 program.parse();
 let party = program.evaluate();
-console.log(party);
-
-
+module.exports = party;
