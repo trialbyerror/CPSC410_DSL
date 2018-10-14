@@ -46,29 +46,35 @@ module.exports = class Game {
                   console.log(c.id + ": " + c.rollInitiative());
               }
               for (let i = 0; i < this.enemies.members.length; i++) {
-                  let e = this.enemy.members[i];
+                  let e = this.enemies.members[i];
                   console.log(e.id + ": " + e.rollInitiative());
               }
               break;
           case "enemies":
+              console.log("Rolling initiative for all enemies...");
               for (let i = 0; i < this.enemies.members.length; i++) {
-                  let e = this.enemy.members[i]
+                  let e = this.enemies.members[i]
                   console.log(e.id + ": " + e.rollInitiative());
               }
               break;
           case "party":
+              console.log("Rolling initiative for all party members...");
               for (let i = 0; i < this.party.members.length; i++) {
                   let c = this.party.members[i];
                   console.log(c.id + ": " + c.rollInitiative());
               }
               break;
           default:
+              console.log("Rolling initiative for " + identifier + ": ");
               for (let i = 0; i < this.party.members.length; i++) {
-                  if (identifer === this.party.members[i].id) {
+                  if (identifier === this.party.members[i].id) {
+                      console.log("Rolling initiative for " + identifier + ": ");
                       let c = this.party.members[i];
                       console.log(c.id + ": " + c.rollInitiative());
+                      break;
                   }
               }
+              console.log("No party member named " + identifier);
               break;
       }
   }

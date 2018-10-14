@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ecfb69e4-7b2c-4f7a-a667-853785e1d8d5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ast/RollInitiative.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game.js" beforeDir="false" afterPath="$PROJECT_DIR$/Game.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -50,7 +48,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="6096" />
+          <entry key="js" value="6308" />
           <entry key="json" value="12" />
           <entry key="txt" value="88" />
         </counts>
@@ -58,7 +56,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="12" />
-          <entry key="JavaScript" value="6096" />
+          <entry key="JavaScript" value="6308" />
           <entry key="PLAIN_TEXT" value="88" />
         </counts>
       </usages-collector>
@@ -93,11 +91,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Game.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="531">
-              <caret line="54" column="74" selection-start-line="54" selection-start-column="74" selection-end-line="54" selection-end-column="74" />
+            <state relative-caret-position="262">
+              <caret line="76" column="63" selection-start-line="76" selection-start-column="63" selection-end-line="76" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -111,7 +109,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ast/RollInitiative.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
@@ -124,7 +122,7 @@
         <entry file="file://$PROJECT_DIR$/ast/Combat.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="969">
-              <caret line="57" selection-start-line="57" selection-end-line="57" selection-end-column="24" />
+              <caret line="118" selection-start-line="118" selection-end-line="118" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -189,8 +187,8 @@
         <option value="$PROJECT_DIR$/static/Program.js" />
         <option value="$PROJECT_DIR$/party.txt" />
         <option value="$PROJECT_DIR$/static/StaticParser.js" />
-        <option value="$PROJECT_DIR$/Game.js" />
         <option value="$PROJECT_DIR$/ast/RollInitiative.js" />
+        <option value="$PROJECT_DIR$/Game.js" />
       </list>
     </option>
   </component>
@@ -306,12 +304,12 @@
       <updated>1539534967447</updated>
       <workItem from="1539534968619" duration="52000" />
       <workItem from="1539535104979" duration="660000" />
-      <workItem from="1539535834589" duration="19750000" />
+      <workItem from="1539535834589" duration="20481000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20462000" />
+    <option name="totallyTimeSpent" value="21193000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -322,7 +320,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3291815" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49959117" weight="0.32740214" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49959117" visible="true" weight="0.32740214" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49959117" weight="0.38256228" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -496,7 +494,7 @@
     <entry file="file://$PROJECT_DIR$/ast/Combat.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="969">
-          <caret line="57" selection-start-line="57" selection-end-line="57" selection-end-column="24" />
+          <caret line="118" selection-start-line="118" selection-end-line="118" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -535,10 +533,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Game.js">
+    <entry file="file://$PROJECT_DIR$/ast/RollInitiative.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
-          <caret line="54" column="74" selection-start-line="54" selection-start-column="74" selection-end-line="54" selection-end-column="74" />
+        <state relative-caret-position="255">
+          <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-end-line="16" />
         </state>
       </provider>
     </entry>
@@ -549,10 +547,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ast/RollInitiative.js">
+    <entry file="file://$PROJECT_DIR$/Game.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-end-line="16" />
+        <state relative-caret-position="262">
+          <caret line="76" column="63" selection-start-line="76" selection-start-column="63" selection-end-line="76" selection-end-column="63" />
         </state>
       </provider>
     </entry>
