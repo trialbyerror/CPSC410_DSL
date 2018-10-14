@@ -76,9 +76,12 @@ module.exports = class Game {
   setupEnemies() {
     LineParser.getAndCheckNext(/setup/);
     LineParser.getAndCheckNext(/combat/);
-    this.combat = new Combat().parse();
+    this.combat = new Combat();
+    this.combat.parse();
     console.log("setting up enemies");
     // TODO accept more cmd line args
+    this.enemies = this.combat.evaluate();
+    console.log(this.enemies);
   }
 
   // Okay so when we spin up a program, our AST is our party and whatever arguments are passed in
