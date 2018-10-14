@@ -1,4 +1,6 @@
 const LineParser = require("./LineParser.js");
+const Combat = require("./ast/Combat.js");
+const dnd = require("dnd-combat-simulator");
 
 module.exports = class Game {
 
@@ -27,7 +29,7 @@ module.exports = class Game {
   setupEnemies() {
     LineParser.getAndCheckNext(/setup/);
     LineParser.getAndCheckNext(/combat/);
-    this.enemies = "these are some nice enemies";
+    this.combat = new Combat().parse();
     console.log("setting up enemies");
     // TODO accept more cmd line args
   }
