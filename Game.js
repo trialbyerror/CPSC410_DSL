@@ -1,6 +1,7 @@
 const LineParser = require("./LineParser.js");
 const Combat = require("./ast/Combat.js");
 const RollInitiative = require("./ast/RollInitiative.js");
+const Target = require("./ast/Target.js");
 const dnd = require("dnd-combat-simulator");
 
 module.exports = class Game {
@@ -26,9 +27,12 @@ module.exports = class Game {
             this.parseRoll();
             break;
         case "target":
-            // TODO target
+            let target = new Target(this.party, this.enemies);
+            target.parse();
+            target.evaluate();
             break;
         case "for":
+
             // TODO run
             break;
       // where we make all our new nodes
@@ -65,7 +69,6 @@ module.exports = class Game {
               }
               break;
           default:
-              console.log("Rolling initiative for " + identifier + ": ");
               for (let i = 0; i < this.party.members.length; i++) {
                   if (identifier === this.party.members[i].id) {
                       console.log("Rolling initiative for " + identifier + ": ");
