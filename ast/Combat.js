@@ -34,7 +34,6 @@ class Combat {
   }
 
   evaluate() {
-    console.log("Evaluating Combat")
     const enemies = [];
     for (const cmd of this.commands) {
       const cmdEval = cmd.evaluate();
@@ -50,6 +49,10 @@ class Combat {
     for (const enemy of enemies) {
       party.addMember(enemy);
     }
+    if (enemies.length > 0)
+      console.log("Spawning enemies...");
+    else
+      console.log("No enemies spawned");
     return party;
   }
 }
@@ -58,7 +61,6 @@ class ForNode {
   constructor() {}
 
   parse() {
-    console.log("parsing forNode");
     this.numTimes = parseInt(LineParser.getNext());
     LineParser.getAndCheckNext(/times/);
     this.body = this.getForType();
@@ -78,7 +80,6 @@ class ForNode {
   }
 
   evaluate() {
-    console.log("Evaluating ForNode")
     const completedActions = [];
     for (let i=0; i < this.numTimes; i++) {
       completedActions.push(this.body.evaluate());
@@ -91,7 +92,6 @@ class EnemyNode {
   constructor() {}
 
   parse() {
-    console.log("parsing enemy node");
     const type = LineParser.getNext();
     switch (type) {
       case "huge":
@@ -109,7 +109,6 @@ class EnemyNode {
 
   // returns a Combatant reflecting the enemy type
   evaluate() {
-    console.log("Evaluating EnemyNode")
     // TODO make this more robust if time.
     return new dnd.Combatant(this.type, 11, 12, 2, 3, 6, 1, 1);
   }

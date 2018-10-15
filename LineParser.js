@@ -8,9 +8,6 @@ class LineParser {
 
   tokenize(line) {
     this.tokens = line.split(" ");
-    for (let token of this.tokens) {
-      console.log(token);
-    }
     this.currentToken = 0;
   }
 
@@ -43,7 +40,7 @@ class LineParser {
   getAndCheckNext(regexp) {
       let s = this.getNext();
       if (!regexp.test(s)) {
-          throw new Error(`Unexpected token. s is ${s}, regexp is ${regexp}`);
+          throw new Error(`Unexpected token ${s}`);
       }
       return s;
   }

@@ -19,7 +19,7 @@ const handleOneLine = (line) => {
       game.parse();
     }
   } catch (err) {
-    console.log(err);
+    console.log(err.message);
   }
   rl.prompt();
 };
